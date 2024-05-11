@@ -9,10 +9,11 @@ int data() {
         printf("Bellend refers to dickhead.") ;
         return 0;
         } else {
-        err();
+        err(answer);
     }
 }
 
+/* Add answers to an array!*/
 
 int translation () {
     char input[20];
@@ -27,10 +28,13 @@ int translation () {
     }
 }
 
-/* Finish this part first!*/
-
-int err () {
-    printf("Ive run into a error!");
+int err (char *answer) {
+    if (strcmp(answer, "") == 0) {
+        printf("Invalid!");
+        return 0;
+    } else {
+    }
+   
 }
 
 int main () {
