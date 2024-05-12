@@ -2,18 +2,37 @@
 # include <string.h>
 # include <stdlib.h>
 
+int err (char *answer) {
+    if (strcmp(answer, "") == 0) {
+        printf("Invalid!");
+        return 0;
+    } else {
+    }
+   
+}
+
+
 int data() {
     char answer[50];
     scanf("%s", answer); 
         if (strcmp(answer, "Bellend") == 0) {
         printf("Bellend refers to dickhead.") ;
-        return 0;
-        } else {
-        err(answer);
     }
+    values();
+    return 0;
 }
 
+
 /* Add answers to an array!*/
+
+int values () {
+   char *answer [] = {"Bellend"};
+    for (int i = 0; i < 1; i++)
+    {
+        printf("%s", answer[i]);
+    }
+    return 0;
+}
 
 int translation () {
     char input[20];
@@ -26,15 +45,6 @@ int translation () {
     } else {
         printf("Wrong code!");
     }
-}
-
-int err (char *answer) {
-    if (strcmp(answer, "") == 0) {
-        printf("Invalid!");
-        return 0;
-    } else {
-    }
-   
 }
 
 int main () {
