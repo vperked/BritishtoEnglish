@@ -13,26 +13,16 @@ int err (char *answer) {
 
 
 int data() {
-    char answer[50];
-    scanf("%s", answer); 
-        if (strcmp(answer, "Bellend") == 0) {
-        printf("Bellend refers to dickhead.") ;
-    }
-    values();
-    return 0;
-}
-
-
-/* Add answers to an array!*/
-
-int values () {
-   char *answer [] = {"Bellend"};
-    for (int i = 0; i < 1; i++)
-    {
-        printf("%s", answer[i]);
+    char answer1[30] = "Bellend Refers to Dickhead. \n";
+    char input[50];
+    scanf("%s", input); 
+        if (strcmp(input, "Bellend") == 0) {
+        printf("%s", answer1);
     }
     return 0;
 }
+
+
 
 int translation () {
     char input[20];
