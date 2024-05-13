@@ -6,11 +6,11 @@ int err (char *answer) {
     if (strcmp(answer, "") == 0) {
         printf("Invalid!");
         return 0;
-    } else {
     }
    
 }
 
+/* Add more terms, Implement Error Messages into the funcs.*/
 
 int data() {
     char * answer1 = "Bellend Refers to Dickhead. \n";
