@@ -15,6 +15,8 @@ int err (char *answer) {
 int data() {
     char answer1[30] = "Bellend Refers to Dickhead. \n";
     char answer2[30] = "WagWan Refers to Whats Up. \n";
+    char answer3[70] = "Twat or You Silly Twat, refers to you being a dumbass. \n";
+    char answer4[60] = "Knobhead Refers to Dickhead. \n";
     char input[50];
     scanf("%s", input); 
         if (strcmp(input, "Bellend") == 0) {
@@ -22,7 +24,13 @@ int data() {
     }
         if (strcmp(input, "WagWan") == 0) {
         printf("%s", answer2);
-        return 0; 
+    }
+        if (strcmp(input, "Twat") == 0 ) {
+            printf("%s", answer3);
+        }
+    if (strcmp(input, "Knobhead") == 0 ) {
+        printf("%s", answer4);
+       return 0;
     }
 }
 
