@@ -13,22 +13,22 @@ int err (char *answer) {
 
 
 int data() {
-    char answer1[30] = "Bellend Refers to Dickhead. \n";
-    char answer2[30] = "WagWan Refers to Whats Up. \n";
-    char answer3[70] = "Twat or You Silly Twat, refers to you being a dumbass. \n";
-    char answer4[60] = "Knobhead Refers to Dickhead. \n";
-    char input[50];
+    char * answer1 = "Bellend Refers to Dickhead. \n";
+    char * answer2 = "WagWan Refers to Whats Up. \n";
+    char * answer3 = "Twat or You Silly Twat, refers to you being a dumbass. \n";
+    char * answer4 = "Knobhead Refers to Dickhead. \n";
+    char * input;
     scanf("%s", input); 
-        if (strcmp(input, "Bellend") == 0) {
+        if (strncmp(input, "Bellend", 7) == 0) {
         printf("%s", answer1);
     }
-        if (strcmp(input, "WagWan") == 0) {
+        if (strncmp(input, "WagWan", 6) == 0) {
         printf("%s", answer2);
     }
-        if (strcmp(input, "Twat") == 0 ) {
+        if (strncmp(input, "Twat", 4) == 0 ) {
             printf("%s", answer3);
         }
-    if (strcmp(input, "Knobhead") == 0 ) {
+    if (strncmp(input, "Knobhead", 8) == 0 ) {
         printf("%s", answer4);
        return 0;
     }
@@ -37,10 +37,10 @@ int data() {
 
 
 int translation () {
-    char input[20];
+    char input[50];
     printf("Type translate! \n");
     scanf("%s", &input);
-    if (strcmp(input, "translate") == 0 ) {    
+    if (strncmp(input, "translate", 50) == 0 ) {    
         printf("Hello and welcome to British to English translator, Please input the word you'd like to translate: ");
         data();
         return 0;
