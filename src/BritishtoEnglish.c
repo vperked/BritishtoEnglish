@@ -14,12 +14,16 @@ int err (char *answer) {
 
 int data() {
     char answer1[30] = "Bellend Refers to Dickhead. \n";
+    char answer2[30] = "WagWan Refers to Whats Up. \n";
     char input[50];
     scanf("%s", input); 
         if (strcmp(input, "Bellend") == 0) {
         printf("%s", answer1);
     }
-    return 0;
+        if (strcmp(input, "WagWan") == 0) {
+        printf("%s", answer2);
+        return 0; 
+    }
 }
 
 
