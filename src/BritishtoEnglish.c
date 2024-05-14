@@ -2,13 +2,6 @@
 # include <string.h>
 # include <stdlib.h>
 
-int err (char *answer) {
-    if (strcmp(answer, "") == 0) {
-        printf("Invalid!");
-        return 0;
-    }
-   
-}
 
 /* Add more terms, Implement Error Messages into the funcs.*/
 
@@ -21,19 +14,30 @@ int data() {
     scanf("%s", input); 
         if (strncmp(input, "Bellend", 7) == 0) {
         printf("%s", answer1);
+        } else {
+           printf("Not a value! \n");
+           return 0;
     }
         if (strncmp(input, "WagWan", 6) == 0) {
         printf("%s", answer2);
+         } else {
+           printf("Not a value! \n");
+           return 0;
     }
         if (strncmp(input, "Twat", 4) == 0 ) {
             printf("%s", answer3);
+             } else {
+            printf("Not a value! \n");
+           return 0;
         }
     if (strncmp(input, "Knobhead", 8) == 0 ) {
         printf("%s", answer4);
-       return 0;
+         return 0;
+         } else {
+          printf("Not a value! \n");
+           return 0;
     }
 }
-
 
 
 int translation () {
