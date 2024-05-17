@@ -10,7 +10,8 @@ int data() {
     char * answer2 = "WagWan Refers to Whats Up. \n";
     char * answer3 = "Twat or You Silly Twat, refers to you being a dumbass. \n";
     char * answer4 = "Knobhead Refers to Dickhead. \n";
-    char * input;
+    char input[50];
+    printf("Please input something youre trying to translate: \n");
     scanf("%s", input); 
         if (strncmp(input, "Bellend", 7) == 0) {
         printf("%s", answer1);
@@ -40,20 +41,8 @@ int data() {
 }
 
 
-int translation () {
-    char input[50];
-    printf("Type translate! \n");
-    scanf("%s", &input);
-    if (strncmp(input, "translate", 50) == 0 ) {    
-        printf("Hello and welcome to British to English translator, Please input the word you'd like to translate: ");
-        data();
-        return 0;
-    } else {
-        printf("Wrong code!");
-    }
-}
 
 int main () {
-    translation();
+   data();
 }
 
